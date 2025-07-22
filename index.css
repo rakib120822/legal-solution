@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+
+.background{
+    background:  url("./images/Rectangle\ 7.png") ,url("./images/banner.png");
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center  , center ;
+     background-size: 100% 
+     
+}
+
+
+.background2{
+    background:  url("./images/Rectangle\ 5.png") ,url("./images/banner.png");
+    background-repeat: no-repeat;
+    background: cover;
+    background-position: center  , center ;
+    background-size: 100%;
+}

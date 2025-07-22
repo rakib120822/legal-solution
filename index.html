@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-Poppins">
@@ -18,8 +19,8 @@
         <nav class="flex justify-between">
                 <img  src="./images/logo2.png" alt="" srcset="">
 
-            <ul class="flex items-center gap-8 text-[1rem] text-[#707070] hidden lg:visible">
-                <li class="">Home </li>
+            <ul class="flex flex-col hidden lg:flex-row items-center gap-7 text-[1rem] text-[#707070]   ">
+                <li class="">Home ></li>
                 <li>Service ></li>
                 <li>Cases ></li>
                 <li>Blog ></li>
@@ -28,23 +29,24 @@
             <button class="bg-[#B68C5A] rounded-lg px-[30px] py-[20] text-[#FFFFFF] text-[1.125rem] font-semibold">Free Consultation</button>
         </nav>
 
-        <section class="mx-auto my-[70px] text-center  bg-[url(/images/banner.png)]  text-[#FFFFFF]   bg-cover bg-no-repeat rounded-lg">
-
-            <div class="py-[140px] bg-gradient-to-t from-[rgba(17,17,17,1)] to-[rgba(17,17,17,0)] ">
-                <h1 class="text-5xl md:text-7xl mb-6 font-bold md:font-extrabold font-[EB_Garamond]">We Provide Effective<br/>
+        <section class="flex flex-col flex-1 justify-center items-center my-[100px] border border-red-900 text-center text-[#FFFFFF] background2 rounded-lg w-[100%] h-[550px] py-auto">
+                <h1 class="text-5xl lg:text-7xl  mb-6 font-bold md:font-extrabold font-[EB_Garamond]">We Provide Effective<br/>
             Legal Solutions</h1>
             <p class="mb-8  text-[#E7E7E7] font-normal leading-6">There are many variations of passages of Lorem Ipsum available, but the majority<br/>have suffered alteration in some form, by injected humour.</p>
-            <input type="text" placeholder="Search your services" class="w-[500px] bg-[#FFFFFF] py-[19px]  placeholder:text-base placeholder:text-[#A0A0A0] placeholder:py-[19px] sm:max-w-[500px]  placeholder:pl-[20px] rounded-lg mr-6 mb-5">
-            <button class="bg-[#B68C5A] rounded-lg px-[39px] py-[17px] text-[#FFFFFF] text-[1.125rem] font-semibold">Search</button></div>
+            <div>
+              <input type="text" placeholder="Search your services" class="w-[500px] bg-[#FFFFFF] py-[19px]  placeholder:text-base placeholder:text-[#A0A0A0] placeholder:py-[19px] sm:max-w-[500px]  placeholder:pl-[20px] rounded-lg mr-6 mb-5">
+            <button class="bg-[#B68C5A] rounded-lg px-[39px] py-[17px] text-[#FFFFFF] text-[1.125rem] font-semibold">Search</button>
+            </div>
         </section>
     </header>
 
 
-    <section class="feature-section text-center my-[100px]">
+    <main>
+      <section class="feature-section text-center my-[100px]">
         <h2 class="font-extrabold font-[EB_Garamond] text-[2.5rem] text-[#414040]">The Legal Practice Area</h2>
         <p class="text-[1rem] leading-6 font-normal text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have<br/> suffered alteration in some form, by injected humour.</p>
 
-        <div class="feature-container grid  grid-cols-3 w-[80%] mx-auto mt-[64px]">
+        <div class="feature-container grid sm:grid-cols-2  lg:grid-cols-3 w-[80%] mx-auto mt-[64px]">
           <div class="feature text-center  p-10  border-r border-b border-[#E7E7E7]">
             <img src="./images/business.png" alt="" class="mx-auto mb-[32px]">
             <h3 class="font-[EB_Garamond] font-extrabold text-3xl text-[#414040] mb-[24px]">Business Law</h3>
@@ -95,5 +97,146 @@
 
         </div>
     </section>
+
+    <section class="my-[100px] w-[80%] mx-auto text-center">
+      <h2 class="font-[EB_Garamond] text-[2.5rem] text-[#414040] mb-[24px] font-extrabold">What Our Client Say</h2>
+      <p class="font-normal text-[1rem] leading-6 text-[#707070] mb-[64px]">There are many variations of passages of Lorem Ipsum available, but the majority have<br/>suffered alteration in some form, by injected humour.</p>
+
+      <div class="background text-[#FFFFFF] rounded-lg  h-[500px] flex flex-col justify-center items-center">
+        <div class="flex flex-col  items-center mb-[32px]">
+          <img src="./images/IMG-20250329-WA0004.jpg" alt="" class="max-w-[70px] border-2 border-white rounded-[50%] mb-[24px]">
+        <h2 class="font-[EB_Garamond] font-extrabold text-[1.5rem]">Rakibul Islam</h2>
+        <p class="font-normal text-[1rem] leading-[26px]">Web Developer</p>
+        </div>
+        <p class="font-normal text-[1rem] leading-[26px] text-[#F3F3F3]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin<br/>literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney,<br>College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+      </div>
+      
+    </section>
+
+    <section class="w-[80%] mx-auto text-center my-[100px]">
+      <h2 class="text-[2.5rem] font-[EB_Garamond] font-extrabold mb-[24px]">Frequently Asked Any Questions</h2>
+      <p class="font-normal text-[1rem] leading-[26px] text-[#707070] mb-[64px]">There are many variations of passages of Lorem Ipsum available, but the majority have<br/>suffered alteration in some form, by injected humour.</p>
+
+
+      <div class="grid grid-cols-1 xl:grid-cols-2">
+        <div>
+          <div class="p-[23px] bg-[#F3F3F3] rounded-[8px] text-start mb-[21px]">
+            <h3 class="text-[1.5rem] text-[#414040] font-[EB_Garamond] font-extrabold mb-[16px]">1. Are application fee waivers available?</h3>
+             <p class="font-normal text-[1rem] leading-[26px] text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, . </p>
+          </div>
+          <div class="p-[23px] bg-[#F3F3F3] rounded-[8px] text-start mb-[30px]">
+            <h3 class="text-[1.5rem] text-[#414040] font-[EB_Garamond] font-extrabold mb-[16px]">1. Are application fee waivers available?</h3>
+          </div>
+          <div class="p-[23px] bg-[#F3F3F3] rounded-[8px] text-start mb-[30px]">
+            <h3 class="text-[1.5rem] text-[#414040] font-[EB_Garamond] font-extrabold mb-[16px]">1. Are application fee waivers available?</h3>
+          </div>
+          <div class="p-[23px] bg-[#F3F3F3] rounded-[8px] text-start mb-[30px]">
+            <h3 class="text-[1.5rem] text-[#414040] font-[EB_Garamond] font-extrabold mb-[16px]">1. Are application fee waivers available?</h3>
+          </div>
+        </div>
+        <div >
+          <img src="./images/faq.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="w-[80%] mx-auto text-center my-[100px]">
+      <h2 class="text-[2.5rem] font-[EB_Garamond] font-extrabold mb-[24px]">Contact With Us</h2>
+      <p  class="font-normal text-[1rem] leading-[26px] text-[#707070] mb-[64px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+
+      <div class="flex flex-col-reverse lg:flex-row lg:gap-[30px] justify-center">
+        <div class="grid grid-cols-2 w-[100%] lg:w-[50%]">
+
+          <div class=" flex flex-col justify-center items-center border-r border-b border-[#CFCFCF] bg-[#F3F3F3] py-[64px]">
+             <img src="./images/address.png" alt="" >
+            <h3 class="text-[1.5rem] font-[EB_Garamond] font-extrabold ">Address</h3>
+            <p class="font-normal text-[1rem] leading-[26px] text-[#707070] ">A108 Adam Street,<br/>
+New York, NY 535022</p>
+
+          </div>
+
+
+          <div class=" flex flex-col justify-center items-center border-b border-[#CFCFCF] bg-[#F3F3F3]">
+            <img src="./images/call.png" alt="" >
+            <h3 class="text-[1.5rem] font-[EB_Garamond] font-extrabold ">Call Us</h3>
+            <p class="font-normal text-[1rem] leading-[26px] text-[#707070] ">+88 02883860565<br/>+88 0288386056
+</p>
+          </div>
+
+
+          <div class="flex flex-col justify-center items-center border-r border-[#CFCFCF] bg-[#F3F3F3]">
+            <img src="./images/email.png" alt="" >
+            <h3 class="text-[1.5rem] font-[EB_Garamond] font-extrabold ">Email us</h3>
+            <p class="font-normal text-[1rem] leading-[26px] text-[#707070] ">ingo@gamil.com<br/>
+info@gmail.com</p>
+          </div>
+
+
+          <div class="flex flex-col justify-center items-center  bg-[#F3F3F3] py-[64px]">
+            <img src="./images/time.png" alt="" >
+            <h3 class="text-[1.5rem] font-[EB_Garamond] font-extrabold ">working Hours</h3>
+            <p class="font-normal text-[1rem] leading-[26px] text-[#707070] ">Mon-Fri 9AM to 5PM<br/>Sunday: 9AM to 1PM</p>
+          </div>
+
+      </div>
+
+      <div class="flex flex-col w-[100%] lg:w-[40%]">
+        <input type="text" name="name" id="name" placeholder="Your Name" class="w-[100%] rounded-[8px] py-[23px] pl-[23px] bg-[#F3F3F3] mb-[30px]">
+        <input type="email" name="email" id="email" placeholder="Your Email" class="w-[100%] rounded-[8px] py-[23px] pl-[23px] bg-[#F3F3F3] mb-[30px]">
+        <input type="text" name="subject" id="subject" placeholder="Subject" class="w-[100%] rounded-[8px] py-[23px] pl-[23px]  bg-[#F3F3F3] mb-[30px]">
+        <textarea name="msg" id="msg" placeholder="Your Message" cols="3" row="2" class="w-[100%] h-[162px] rounded-[8px] py-[23px] pl-[23px]  bg-[#F3F3F3] mb-[30px]"></textarea>
+        <button class="bg-[#B68C5A] rounded-lg mb-7 lg:mb-0 px-[30px] py-[21px] text-[#FFFFFF] text-[1.125rem] font-semibold">Send Message</button>
+
+      </div>
+    </section>
+    </main>
+
+
+    
+    <footer class="bg-[#111111] w-[100%] ">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white py-[120px] w-[100%] sm:w-[80%] mx-auto gap-[71px]">
+        <div class="text-center sm:text-start">
+          <img src="./images/logo.png" alt="" class="mb-[32px] mx-auto sm:mx-0">
+          <p class="text-[1rem] text-[#CFCFCF] leading-[26px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+
+
+        <div class="text-center sm:text-start">
+          <h4 class="font-[EB_Garamond] font-extrabold text-[1.5rem] mb-[32px]">Usefull Link</h4>
+          <ul class="text-[1rem] text-[#CFCFCF] leading-[40px]">
+            <li class=""><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Cases</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="text-center sm:text-start">
+          <h4 class="font-[EB_Garamond] font-extrabold text-[1.5rem] mb-[32px]">
+            Contact Now
+          </h4> 
+          <p class="text-[1rem] text-[#CFCFCF]  mb-[16px]">555 4th 5t NW, Washington<br/>
+DC 20530, United States</p>
+<p class="text-[1rem] text-[#CFCFCF] mb-[16px]">+88 01750 000 000<br/>
++88 01750 000 000</p>
+<p class="text-[1rem] text-[#CFCFCF] mb-[16px]">info@gmail.com<br/>
+info@gmail.com</p>
+        </div>
+
+
+        <div class="lg:col-span-2 text-center sm:text-start">
+          <h4 class="font-[EB_Garamond] font-extrabold text-[1.5rem] mb-[32px]">Subscribe</h4>
+          <p class="text-[1rem] text-[#CFCFCF]  mb-[16px]">Subscribe for our latest &<br/> Articles. We Won’t Give You<br/> Spam Mails</p>
+          <div class="flex mx-auto inline-block sm:inline sm:mx-0">
+            <input type="email" name="emal" id="Emil" placeholder="Email Address" class="bg-white  placeholder:text-[#A0A0A0] py-[23px] pl-[33px] rounded-[8px] w-[80%] border-none ">
+            <button class="bg-[#B68C5A] rounded-lg py-[23px] px-[10px] sm:p-[23px]
+            " ><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </section>
+    </footer>
+
   </body>
 </html>
